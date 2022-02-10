@@ -1,8 +1,12 @@
-import React from 'react';
 import './App.scss';
+import WorkInProgress from './app/components/WorkInProgress';
 
 function App() {
-  return <div className="App">Hello</div>;
+  return (
+    <div className="App">
+      <WorkInProgress />
+    </div>
+  );
 }
 
 export default App;
