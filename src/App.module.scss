@@ -1,7 +1,7 @@
 @import './assets/styles/variables.scss';
 
 .App {
-  height: 100vh;
+  min-height: 100%;
   color: $color-default;
   background-color: $bg-color-main;
 }

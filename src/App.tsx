@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import WorkInProgress from './app/components/WorkInProgress';
-import LayoutContainer from './app/components/Elements/LayoutContainer';
+import TermsContainer from './app/components/TermsContainer';
 import styles from './App.module.scss';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className={styles.App}>
       <Routes>
         <Route path="/" element={<WorkInProgress />} />
-        <Route path="/terms" element={<LayoutContainer>hello</LayoutContainer>} />
+        <Route path="/terms" element={<TermsContainer />} />
       </Routes>
     </div>
   );
