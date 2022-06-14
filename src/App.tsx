@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.scss';
 import WorkInProgress from './app/components/WorkInProgress';
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Routes>
         <Route path="/" element={<WorkInProgress />} />
         <Route path="/terms" element={<div>hello</div>} />
