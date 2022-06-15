@@ -1,0 +1,22 @@
+.Section {
+  margin-bottom: 74px;
+}
+.Title {
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  font-family: 'Caveat';
+  line-height: 80%;
+  position: relative;
+  left: -10px;
+}
+.Description {
+  font-size: 21px;
+  line-height: 150%;
+  p {
+    margin: 0 0 28px 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
