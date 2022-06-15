@@ -1,0 +1,22 @@
+.Section {
+  margin-bottom: 0;
+}
+.Title {
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.Description {
+  font-size: 21px;
+  line-height: 150%;
+  p {
+    margin: 0 0 28px 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #0688fa;
+  }
+}
