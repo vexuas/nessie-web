@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.scss';
 
 export default function Footer() {
+  //TODO: Add scroll to top function for every redirect
   return (
     <div className={styles.Container}>
       <div className={styles.Contact}>
