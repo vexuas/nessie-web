@@ -1,3 +1,14 @@
+@import './assets/styles/variables.scss';
+
+@font-face {
+  font-family: 'Neucha';
+  src: url('./assets/fonts/Neucha-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: $font-family;
+}
 html {
   height: 100%;
   background-color: #204824 !important;
