@@ -39,3 +39,33 @@
 .Copyright {
   font-size: 21px;
 }
+.Links {
+  padding-top: 24px;
+  font-size: 21px;
+  display: flex;
+  line-height: 100%;
+}
+.Resources {
+  display: flex;
+  margin-right: 74px;
+  flex-direction: column;
+}
+.About {
+  display: flex;
+  flex-direction: column;
+}
+.LinkTitle {
+  font-weight: 600;
+  margin-bottom: 21px;
+}
+.LinkName {
+  color: $color-alt;
+  text-decoration: none;
+  margin-bottom: 16px;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
