@@ -9,7 +9,7 @@ function App() {
     <div className={styles.App}>
       <Routes>
         <Route path="/" element={<WorkInProgress />} />
-        <Route path="/terms" element={<TermsContainer />} />
+        <Route path="/terms_and_privacy" element={<TermsContainer />} />
       </Routes>
       <Footer />
     </div>
