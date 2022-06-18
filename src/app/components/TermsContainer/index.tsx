@@ -10,6 +10,11 @@ import { useEffect } from 'react';
 export default function TermsContainer() {
   const location = useLocation();
 
+  /**
+   * Handler to scroll to specific element
+   * Checks if location has a hash and scrolls to position based on value
+   * Was initially privacy policy but switched to introduction as we want people to see the beginning of the page
+   */
   useEffect(() => {
     const introductionElement = document.getElementById('introduction');
     const termsOfUseElement = document.getElementById('terms_of_use');

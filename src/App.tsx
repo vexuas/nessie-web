@@ -10,6 +10,10 @@ function App() {
   const location = useLocation();
   const previousLocation = useRef('');
 
+  /**
+   * Handler to scroll to beginning of page
+   * Occurs every time a location changes unless it's the same page/there's a hash param
+   */
   useEffect(() => {
     if (location.pathname !== previousLocation.current && location.hash.length === 0) {
       window.scrollTo(0, 0);
