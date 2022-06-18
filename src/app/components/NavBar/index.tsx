@@ -1,6 +1,7 @@
 import styles from './NavBar.module.scss';
 import Button from '../Elements/Button';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   const [scroll, setScroll] = useState(0);
@@ -13,10 +14,12 @@ export default function NavBar() {
   });
   return (
     <div className={`${styles.Container} ${scroll > 10 && styles.Scrolling}`}>
-      <div className={styles.Title}>
-        <img src="./nessie_logo.png" alt="Nessie Logo" className={styles.Logo} />
-        <div className={styles.Name}>nessie</div>
-      </div>
+      <Link to="/">
+        <div className={styles.Title}>
+          <img src="./nessie_logo.png" alt="Nessie Logo" className={styles.Logo} />
+          <div className={styles.Name}>nessie</div>
+        </div>
+      </Link>
       <div className={styles.Links}>
         <a
           href="https://discord.com/invite/47Ccgz9jA4"
