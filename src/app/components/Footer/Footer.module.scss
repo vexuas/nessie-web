@@ -6,12 +6,6 @@
   padding: 51px 160px;
   background-color: $color-default;
   color: $color-alt;
-
-  @media only screen and (max-width: $breakpoint-phone) {
-    min-width: $display-width-default-mobile;
-    width: auto;
-    padding: 0 24px;
-  }
 }
 .Contact {
   display: flex;
@@ -50,9 +44,6 @@
   font-size: 21px;
   display: flex;
   line-height: 100%;
-  @media only screen and (max-width: $breakpoint-phone) {
-    display: none;
-  }
 }
 .Resources {
   display: flex;
@@ -76,5 +67,39 @@
   }
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+  .Container {
+    min-width: $display-width-default-mobile;
+    width: auto;
+    padding: 0 24px;
+  }
+  .Contact {
+    margin-top: auto;
+    margin-right: 24px;
+    margin-bottom: auto;
+  }
+  .Title {
+    margin-bottom: 4px;
+  }
+  .Name {
+    font-size: 36px;
+  }
+  .Logo {
+    width: 32px;
+    height: 32px;
+  }
+  .Description {
+    font-size: 14px;
+    width: auto;
+    margin-bottom: 14px;
+  }
+  .Links {
+    padding-bottom: 12px;
+  }
+  .Resources {
+    margin-right: 8px;
   }
 }
