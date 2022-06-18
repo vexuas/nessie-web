@@ -11,7 +11,10 @@ function App() {
   const previousLocation = useRef('');
 
   useEffect(() => {
-    console.log(location);
+    if (location.pathname !== previousLocation.current) {
+      window.scrollTo(0, 0);
+      previousLocation.current = location.pathname;
+    }
   }, [location]);
 
   return (
