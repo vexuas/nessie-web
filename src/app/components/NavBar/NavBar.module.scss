@@ -11,6 +11,10 @@
   justify-content: space-between;
   background-color: $bg-color-main;
   z-index: 100;
+  transition: filter 0.2s linear;
+}
+.Scrolling {
+  filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.25));
 }
 .Title {
   display: flex;

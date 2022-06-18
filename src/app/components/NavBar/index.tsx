@@ -1,9 +1,17 @@
 import styles from './NavBar.module.scss';
 import Button from '../Elements/Button';
+import { useEffect, useState } from 'react';
 
 export default function NavBar() {
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      setScroll(window.scrollY);
+    });
+  });
   return (
-    <div className={styles.Container}>
+    <div className={`${styles.Container} ${scroll > 10 && styles.Scrolling}`}>
       <div className={styles.Title}>
         <img src="./nessie_logo.png" alt="Nessie Logo" className={styles.Logo} />
         <div className={styles.Name}>nessie</div>
