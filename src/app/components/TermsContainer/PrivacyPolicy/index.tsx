@@ -2,7 +2,7 @@ import styles from './PrivacyPolicy.module.scss';
 
 export default function PrivacyPolicy() {
   return (
-    <div className={styles.Section}>
+    <div className={styles.Section} id="privacy_policy">
       <div className={styles.Title}>Privacy Policy</div>
       <div className={styles.Description}>
         <p>

@@ -46,10 +46,10 @@ export default function Footer() {
         </div>
         <div className={styles.About}>
           <div className={styles.LinkTitle}>About</div>
-          <Link to="/terms_and_privacy" className={styles.LinkName}>
+          <Link to="/terms_and_privacy#terms_of_use" className={styles.LinkName}>
             Terms of Use
           </Link>
-          <Link to="/terms_and_privacy" className={styles.LinkName}>
+          <Link to="/terms_and_privacy#introduction" className={styles.LinkName}>
             Privacy Policy
           </Link>
           <Link to="/" className={styles.LinkName}>
