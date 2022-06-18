@@ -6,6 +6,12 @@
   padding: 51px 160px;
   background-color: $color-default;
   color: $color-alt;
+
+  @media only screen and (max-width: $breakpoint-phone) {
+    min-width: $display-width-default-mobile;
+    width: auto;
+    padding: 0 24px;
+  }
 }
 .Contact {
   display: flex;
@@ -44,6 +50,9 @@
   font-size: 21px;
   display: flex;
   line-height: 100%;
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: none;
+  }
 }
 .Resources {
   display: flex;

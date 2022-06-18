@@ -1,5 +1,13 @@
+@import '../../../../assets/styles/variables.scss';
+
 .Container {
   padding: 190px 0;
   height: calc(100% - 190px * 2);
   margin: 0 160px;
+
+  @media only screen and (max-width: $breakpoint-phone) {
+    min-width: $display-width-default-mobile;
+    width: auto;
+    margin: 0 24px;
+  }
 }
