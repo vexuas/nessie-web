@@ -1,0 +1,16 @@
+@import '../../../../assets/styles/variables.scss';
+
+.Container {
+  background-color: $bg-color-discord;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 18px;
+  font-size: 18px;
+  color: $color-default;
+  line-height: 100%;
+
+  span {
+    position: relative;
+    bottom: -1px;
+  }
+}

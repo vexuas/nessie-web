@@ -1,4 +1,5 @@
 import styles from './NavBar.module.scss';
+import Button from '../Elements/Button';
 
 export default function NavBar() {
   return (
@@ -24,6 +25,7 @@ export default function NavBar() {
         >
           API
         </a>
+        <Button label="Invite" />
       </div>
     </div>
   );
