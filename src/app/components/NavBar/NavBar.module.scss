@@ -31,11 +31,14 @@
 }
 .Links {
   display: flex;
+  align-items: center;
 }
 .LinkName {
   color: $color-default;
   text-decoration: none;
-  margin-right: 36px;
+  margin-right: 42px;
+  position: relative;
+  bottom: -1px;
   &:hover {
     text-decoration: underline;
   }

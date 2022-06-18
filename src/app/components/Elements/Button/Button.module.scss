@@ -8,6 +8,15 @@
   font-size: 18px;
   color: $color-default;
   line-height: 100%;
+  transition: linear background-color 0.1s;
+  &:hover {
+    cursor: pointer;
+    background-color: darken($bg-color-discord, 5%);
+    color: darken($color-default, 10%);
+  }
+  &:active {
+    background-color: darken($bg-color-discord, 7%);
+  }
 
   span {
     position: relative;
