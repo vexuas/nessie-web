@@ -11,10 +11,10 @@ function App() {
   const previousLocation = useRef('');
 
   useEffect(() => {
-    if (location.pathname !== previousLocation.current) {
+    if (location.pathname !== previousLocation.current && location.hash.length === 0) {
       window.scrollTo(0, 0);
-      previousLocation.current = location.pathname;
     }
+    previousLocation.current = location.pathname;
   }, [location]);
 
   return (

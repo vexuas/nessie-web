@@ -2,7 +2,7 @@ import styles from './TermsOfUse.module.scss';
 
 export default function TermsOfUse() {
   return (
-    <div className={styles.Section}>
+    <div className={styles.Section} id="terms_of_use">
       <div className={styles.Title}>Terms of Use</div>
       <div className={styles.Description}>
         <p>
