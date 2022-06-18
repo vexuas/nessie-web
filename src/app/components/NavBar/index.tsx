@@ -25,7 +25,13 @@ export default function NavBar() {
         >
           API
         </a>
-        <Button label="Invite" />
+        <a
+          href="https://discord.com/api/oauth2/authorize?client_id=889135055430111252&permissions=3088&scope=applications.commands%20bot"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button label="Invite" />{' '}
+        </a>
       </div>
     </div>
   );
