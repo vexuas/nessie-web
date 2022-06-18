@@ -49,7 +49,7 @@ export default function Footer() {
           <Link to="/terms_and_privacy#terms_of_use" className={styles.LinkName}>
             Terms of Use
           </Link>
-          <Link to="/terms_and_privacy#privacy_policy" className={styles.LinkName}>
+          <Link to="/terms_and_privacy#introduction" className={styles.LinkName}>
             Privacy Policy
           </Link>
           <Link to="/" className={styles.LinkName}>

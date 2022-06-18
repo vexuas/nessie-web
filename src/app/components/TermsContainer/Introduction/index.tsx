@@ -2,7 +2,7 @@ import styles from './Introduction.module.scss';
 
 export default function Introduction() {
   return (
-    <div className={styles.Section}>
+    <div className={styles.Section} id="introduction">
       <div className={styles.Title}>Introduction</div>
       <div className={styles.Description}>
         <p>Last Updated: 15 June 2022</p>

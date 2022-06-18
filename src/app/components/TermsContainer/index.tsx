@@ -11,11 +11,10 @@ export default function TermsContainer() {
   const location = useLocation();
 
   useEffect(() => {
-    const privacyPolicyElement = document.getElementById('privacy_policy');
+    const introductionElement = document.getElementById('introduction');
     const termsOfUseElement = document.getElementById('terms_of_use');
-    if (privacyPolicyElement && termsOfUseElement && location.hash.length > 0) {
-      location.hash === '#privacy_policy' &&
-        window.scrollTo(0, privacyPolicyElement.offsetTop - 120);
+    if (introductionElement && termsOfUseElement && location.hash.length > 0) {
+      location.hash === '#introduction' && window.scrollTo(0, 0);
       location.hash === '#terms_of_use' && window.scrollTo(0, termsOfUseElement.offsetTop - 120);
     }
   }, [location]);
