@@ -7,7 +7,24 @@ export default function NavBar() {
         <img src="./nessie_logo.png" alt="Nessie Logo" className={styles.Logo} />
         <div className={styles.Name}>nessie</div>
       </div>
-      <div className={styles.Links}>Hi</div>
+      <div className={styles.Links}>
+        <a
+          href="https://discord.com/invite/47Ccgz9jA4"
+          target="_blank"
+          className={styles.LinkName}
+          rel="noreferrer"
+        >
+          Support Server
+        </a>
+        <a
+          href="https://apexlegendsapi.com/#introduction"
+          target="_blank"
+          className={styles.LinkName}
+          rel="noreferrer"
+        >
+          API
+        </a>
+      </div>
     </div>
   );
 }

@@ -29,3 +29,14 @@
   position: relative;
   top: -3px;
 }
+.Links {
+  display: flex;
+}
+.LinkName {
+  color: $color-default;
+  text-decoration: none;
+  margin-right: 36px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
