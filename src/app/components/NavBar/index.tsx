@@ -6,6 +6,7 @@ export default function NavBar() {
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
+    //Set scroll position when user scrolls in the browser; useful to know so we can add the scrolling class
     document.addEventListener('scroll', () => {
       setScroll(window.scrollY);
     });
