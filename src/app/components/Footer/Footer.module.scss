@@ -74,12 +74,10 @@
   .Container {
     min-width: $display-width-default-mobile;
     width: auto;
-    padding: 0 24px;
+    padding: 14px 24px;
   }
   .Contact {
-    margin-top: auto;
-    margin-right: 24px;
-    margin-bottom: auto;
+    margin: 0 24px 0 0;
   }
   .Title {
     margin-bottom: 4px;
@@ -92,14 +90,55 @@
     height: 32px;
   }
   .Description {
-    font-size: 14px;
     width: auto;
-    margin-bottom: 14px;
+    max-width: 286px;
   }
   .Links {
-    padding-bottom: 12px;
+    padding-top: 16px;
+  }
+  .LinkTitle {
+    margin-bottom: 14px;
+  }
+  .LinkName {
+    margin-bottom: 14px;
   }
   .Resources {
     margin-right: 8px;
+  }
+  .Copyright {
+    margin-top: auto;
+  }
+}
+@media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+  .Container {
+    min-width: $display-width-default-mobile;
+    width: calc(100vw - 48px * 2);
+    padding: 24px 48px;
+  }
+  .Contact {
+    margin: 0 36px 0 0;
+  }
+  .Title {
+    margin-bottom: 8px;
+  }
+  .Name {
+    font-size: 42px;
+  }
+  .Logo {
+    width: 42px;
+    height: 42px;
+  }
+  .Description {
+    width: auto;
+    max-width: 286px;
+  }
+  .Resources {
+    margin-right: 32px;
+  }
+  .Links {
+    padding-top: 21px;
+  }
+  .Copyright {
+    margin-top: auto;
   }
 }
