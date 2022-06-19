@@ -65,3 +65,10 @@
     padding: 0 48px;
   }
 }
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+  .Container {
+    min-width: $display-width-default-mobile;
+    width: calc(100vw - 104px * 2);
+    padding: 0 104px;
+  }
+}
