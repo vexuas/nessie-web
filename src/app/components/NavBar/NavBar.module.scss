@@ -47,3 +47,28 @@
     text-decoration: underline;
   }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+  .Container {
+    min-width: $display-width-default-mobile;
+    width: calc(100vw - 24px * 2);
+    padding: 0 24px;
+  }
+  .LinkName {
+    display: none;
+  }
+}
+@media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+  .Container {
+    min-width: $display-width-default-mobile;
+    width: calc(100vw - 48px * 2);
+    padding: 0 48px;
+  }
+}
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+  .Container {
+    min-width: $display-width-default-mobile;
+    width: calc(100vw - 104px * 2);
+    padding: 0 104px;
+  }
+}

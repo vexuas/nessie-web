@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables.scss';
+
 .Container {
   display: flex;
   height: calc(100vh - (32px * 2));
@@ -6,6 +8,7 @@
   align-items: center;
   padding: 32px;
   font-size: 42px;
+  text-align: center;
 }
 .ImageContainer {
   display: flex;
@@ -15,4 +18,9 @@
 .Image {
   border-radius: 8px;
   width: 400px;
+}
+@media only screen and (max-width: $breakpoint-phone) {
+  .Image {
+    width: 300px;
+  }
 }
