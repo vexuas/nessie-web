@@ -1,3 +1,23 @@
+# v0.3.0 (Sat Jan 04 2025)
+
+#### 🚀 Enhancement
+
+- Use personal cdn [#15](https://github.com/vexuas/nessie-web/pull/15) ([@vexuas](https://github.com/vexuas))
+
+#### 🔧 Tweaks
+
+- Add release scripts [#16](https://github.com/vexuas/nessie-web/pull/16) ([@vexuas](https://github.com/vexuas))
+
+#### 🏠 Internal
+
+- Release/2022 06 19 [#14](https://github.com/vexuas/nessie-web/pull/14) ([@vexuas](https://github.com/vexuas))
+
+#### Authors: 1
+
+- Gabriel R ([@vexuas](https://github.com/vexuas))
+
+---
+
 # v0.2.0 (Sun Jun 19 2022)
 
 #### 🚀 Enhancement
