@@ -22,7 +22,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "auto:changelog": "yarn auto changelog",
+    "auto:version": "yarn version --`auto version`",
+    "auto:release": "yarn auto:changelog && yarn auto:version",
+    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && yarn auto:release && git push -u origin head"
   },
   "eslintConfig": {
     "extends": [

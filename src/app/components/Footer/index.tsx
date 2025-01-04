@@ -11,9 +11,9 @@ export default function Footer() {
         </div>
         <div className={styles.Description}>
           For business enquiries or if you just want to reach out, drop me a dm in Discord at
-          Vexuas#8141 or email me at hello@vexuas.com :D
+          @vexuas or email me at hello@vexuas.com :D
         </div>
-        <div className={styles.Copyright}>Copyright © 2022 Vexuas</div>
+        <div className={styles.Copyright}>Copyright © 2025 Vexuas</div>
       </div>
       <div className={styles.Links}>
         <div className={styles.Resources}>
