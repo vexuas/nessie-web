@@ -6,23 +6,23 @@
   margin: 0 160px;
 }
 
-@media only screen and (max-width: $breakpoint-phone) {
+@media only screen and (max-width: variables.$breakpoint-phone) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: auto;
     margin: 0 24px;
   }
 }
-@media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+@media only screen and (min-width: variables.$breakpoint-phone) and (max-width: variables.$breakpoint-tablet) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: auto;
     margin: 0 48px;
   }
 }
-@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+@media only screen and (min-width: variables.$breakpoint-tablet) and (max-width: variables.$breakpoint-desktop) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: auto;
     margin: 0 104px;
   }

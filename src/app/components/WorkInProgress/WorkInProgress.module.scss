@@ -19,7 +19,7 @@
   border-radius: 8px;
   width: 400px;
 }
-@media only screen and (max-width: $breakpoint-phone) {
+@media only screen and (max-width: variables.$breakpoint-phone) {
   .Image {
     width: 300px;
   }
