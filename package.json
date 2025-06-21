@@ -23,10 +23,10 @@
     "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "auto:changelog": "yarn auto changelog",
-    "auto:version": "yarn version --`auto version`",
-    "auto:release": "yarn auto:changelog && yarn auto:version",
-    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && yarn auto:release && git push -u origin head",
+    "auto:changelog": "pnpm exec auto changelog",
+    "auto:version": "pnpm version --`auto version`",
+    "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
+    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && pnpm run auto:release && git push -u origin head",
     "dev": "vite"
   },
   "eslintConfig": {
