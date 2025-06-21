@@ -1,7 +1,6 @@
 {
   "name": "nessie-web",
   "version": "0.3.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -13,39 +12,17 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "6",
-    "react-scripts": "5.0.0",
     "sass": "^1.49.7",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "typescript": "^4.4.2"
   },
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "auto:changelog": "yarn auto changelog",
-    "auto:version": "yarn version --`auto version`",
-    "auto:release": "yarn auto:changelog && yarn auto:version",
-    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && yarn auto:release && git push -u origin head",
+    "auto:changelog": "pnpm exec auto changelog",
+    "auto:version": "pnpm version --$(auto version)",
+    "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
+    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && pnpm run auto:release && git push -u origin head",
     "dev": "vite"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "auto": "^10.32.6",

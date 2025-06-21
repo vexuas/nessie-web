@@ -1,11 +1,12 @@
-@import '../../../assets/styles/variables.scss';
+@use '../../../assets/styles/variables.scss' as variables;
+@use '../../../assets/styles/mixins.scss' as mixins;
 
 .Container {
   display: flex;
   justify-content: space-between;
   padding: 51px 160px;
-  background-color: $color-default;
-  color: $color-alt;
+  background-color: variables.$color-default;
+  color: variables.$color-alt;
 }
 .Contact {
   display: flex;
@@ -59,7 +60,7 @@
   margin-bottom: 21px;
 }
 .LinkName {
-  color: $color-alt;
+  color: variables.$color-alt;
   text-decoration: none;
   margin-bottom: 16px;
   &:hover {
@@ -70,9 +71,9 @@
   }
 }
 
-@media only screen and (max-width: $breakpoint-phone) {
+@include mixins.breakpoint(phone) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: auto;
     padding: 14px 24px;
   }
@@ -109,9 +110,9 @@
     margin-top: auto;
   }
 }
-@media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+@include mixins.breakpoint(tablet) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: calc(100vw - 48px * 2);
     padding: 24px 48px;
   }
@@ -142,9 +143,9 @@
     margin-top: auto;
   }
 }
-@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+@include mixins.breakpoint(desktop) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: calc(100vw - 104px * 2);
     padding: 24px 104px;
   }

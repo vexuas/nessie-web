@@ -1,4 +1,4 @@
-@import './assets/styles/variables.scss';
+@use './assets/styles/variables.scss' as variables;
 
 @font-face {
   font-family: 'Neucha';
@@ -19,7 +19,7 @@
   font-style: normal;
 }
 * {
-  font-family: $font-family;
+  font-family: variables.$font-family;
 }
 html {
   height: 100%;
@@ -38,6 +38,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 a {
-  color: $color-default;
+  color: variables.$color-default;
   text-decoration: none;
 }

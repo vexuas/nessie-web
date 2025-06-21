@@ -1,4 +1,5 @@
-@import '../../../assets/styles/variables.scss';
+@use '../../../assets/styles/variables.scss' as variables;
+@use '../../../assets/styles/mixins.scss' as mixins;
 
 .Container {
   display: flex;
@@ -19,7 +20,8 @@
   border-radius: 8px;
   width: 400px;
 }
-@media only screen and (max-width: $breakpoint-phone) {
+
+@include mixins.breakpoint(phone) {
   .Image {
     width: 300px;
   }

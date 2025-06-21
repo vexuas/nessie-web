@@ -1,4 +1,5 @@
-@import '../../../assets/styles/variables.scss';
+@use '../../../assets/styles/variables.scss' as variables;
+@use '../../../assets/styles/mixins.scss' as mixins;
 
 .Container {
   position: fixed;
@@ -9,7 +10,7 @@
   align-items: center;
   padding: 0 160px;
   justify-content: space-between;
-  background-color: $bg-color-main;
+  background-color: variables.$bg-color-main;
   z-index: 100;
   transition: filter 0.2s linear;
 }
@@ -38,7 +39,7 @@
   align-items: center;
 }
 .LinkName {
-  color: $color-default;
+  color: variables.$color-default;
   text-decoration: none;
   margin-right: 42px;
   position: relative;
@@ -48,9 +49,9 @@
   }
 }
 
-@media only screen and (max-width: $breakpoint-phone) {
+@include mixins.breakpoint(phone) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: calc(100vw - 24px * 2);
     padding: 0 24px;
   }
@@ -58,16 +59,16 @@
     display: none;
   }
 }
-@media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+@include mixins.breakpoint(tablet) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: calc(100vw - 48px * 2);
     padding: 0 48px;
   }
 }
-@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+@include mixins.breakpoint(desktop) {
   .Container {
-    min-width: $display-width-default-mobile;
+    min-width: variables.$display-width-default-mobile;
     width: calc(100vw - 104px * 2);
     padding: 0 104px;
   }

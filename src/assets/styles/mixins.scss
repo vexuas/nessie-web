@@ -1,0 +1,21 @@
+@use './variables.scss' as variables;
+
+@mixin breakpoint($type) {
+  @if $type == phone {
+    @media only screen and (max-width: #{variables.$breakpoint-phone}) {
+      @content;
+    }
+  } @else if $type == tablet {
+    @media only screen and (min-width: #{variables.$breakpoint-phone + 1px}) and (max-width: #{variables.$breakpoint-tablet}) {
+      @content;
+    }
+  } @else if $type == desktop {
+    @media only screen and (min-width: #{variables.$breakpoint-tablet + 1px}) and (max-width: #{variables.$breakpoint-desktop}) {
+      @content;
+    }
+  } @else if $type == widescreen {
+    @media only screen and (min-width: #{variables.$breakpoint-desktop + 1px}) {
+      @content;
+    }
+  }
+}
