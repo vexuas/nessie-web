@@ -1,4 +1,5 @@
 @use '../../../assets/styles/variables.scss';
+@use '../../../assets/styles/mixins.scss';
 
 .Container {
   display: flex;
@@ -70,7 +71,7 @@
   }
 }
 
-@media only screen and (max-width: variables.$breakpoint-phone) {
+@include mixins.breakpoint(phone) {
   .Container {
     min-width: variables.$display-width-default-mobile;
     width: auto;
@@ -109,7 +110,7 @@
     margin-top: auto;
   }
 }
-@media only screen and (min-width: variables.$breakpoint-phone) and (max-width: variables.$breakpoint-tablet) {
+@include mixins.breakpoint(tablet) {
   .Container {
     min-width: variables.$display-width-default-mobile;
     width: calc(100vw - 48px * 2);
@@ -142,7 +143,7 @@
     margin-top: auto;
   }
 }
-@media only screen and (min-width: variables.$breakpoint-tablet) and (max-width: variables.$breakpoint-desktop) {
+@include mixins.breakpoint(desktop) {
   .Container {
     min-width: variables.$display-width-default-mobile;
     width: calc(100vw - 104px * 2);
