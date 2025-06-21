@@ -1,4 +1,5 @@
 @use '../../../../assets/styles/variables.scss';
+@use 'sass:color';
 
 .Container {
   background-color: variables.$bg-color-discord;
@@ -11,11 +12,11 @@
   transition: linear background-color 0.1s;
   &:hover {
     cursor: pointer;
-    background-color: darken(variables.$bg-color-discord, 5%);
-    color: darken(variables.$color-default, 10%);
+    background-color: color.adjust(variables.$bg-color-discord, $lightness: -5%);
+    color: color.adjust(variables.$color-default, $lightness: -10%);
   }
   &:active {
-    background-color: darken(variables.$bg-color-discord, 7%);
+    background-color: color.adjust(variables.$bg-color-discord, $lightness: -7%);
   }
 
   span {
