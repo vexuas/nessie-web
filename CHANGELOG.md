@@ -1,3 +1,28 @@
+# v0.4.0 (Mon Jun 23 2025)
+
+#### 🚀 Enhancement
+
+- Migrate to use vite [#19](https://github.com/vexuas/nessie-web/pull/19) ([@vexuas](https://github.com/vexuas))
+
+#### 🔧 Tweaks
+
+- Fix auto versioning script [#24](https://github.com/vexuas/nessie-web/pull/24) ([@vexuas](https://github.com/vexuas))
+- Add typescript and lint workflow [#22](https://github.com/vexuas/nessie-web/pull/22) ([@vexuas](https://github.com/vexuas))
+- Upgrade to react 18 [#23](https://github.com/vexuas/nessie-web/pull/23) ([@vexuas](https://github.com/vexuas))
+- Add pull request template [#21](https://github.com/vexuas/nessie-web/pull/21) ([@vexuas](https://github.com/vexuas))
+- Cleanup deprecated code [#20](https://github.com/vexuas/nessie-web/pull/20) ([@vexuas](https://github.com/vexuas))
+- Migrate to use pnpm [#18](https://github.com/vexuas/nessie-web/pull/18) ([@vexuas](https://github.com/vexuas))
+
+#### 🏠 Internal
+
+- Release/2025 01 04 [#17](https://github.com/vexuas/nessie-web/pull/17) ([@vexuas](https://github.com/vexuas))
+
+#### Authors: 1
+
+- Gabriel R ([@vexuas](https://github.com/vexuas))
+
+---
+
 # v0.3.0 (Sat Jan 04 2025)
 
 #### 🚀 Enhancement
