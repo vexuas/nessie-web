@@ -18,11 +18,11 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "lint": "eslint .",
     "auto:changelog": "pnpm exec auto changelog",
     "auto:version": "pnpm version --$(auto version)",
     "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
-    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && pnpm run auto:release && git push -u origin head",
-    "dev": "vite"
+    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && pnpm run auto:release && git push -u origin head"
   },
   "devDependencies": {
     "auto": "^10.32.6",
