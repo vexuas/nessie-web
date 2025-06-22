@@ -20,7 +20,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "auto:changelog": "pnpm exec auto changelog",
-    "auto:version": "pnpm version --$(pnpm exec auto version)",
+    "auto:version": "pnpm version $(pnpm exec auto version)",
     "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
     "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && pnpm run auto:release && git push -u origin head"
   },
