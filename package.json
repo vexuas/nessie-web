@@ -18,6 +18,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "lint": "eslint .",
     "auto:changelog": "pnpm exec auto changelog",
     "auto:version": "pnpm version --$(auto version)",
     "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
