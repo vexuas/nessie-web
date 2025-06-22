@@ -19,8 +19,8 @@ export default function TermsContainer() {
     const introductionElement = document.getElementById('introduction');
     const termsOfUseElement = document.getElementById('terms_of_use');
     if (introductionElement && termsOfUseElement && location.hash.length > 0) {
-      location.hash === '#introduction' && window.scrollTo(0, 0);
-      location.hash === '#terms_of_use' && window.scrollTo(0, termsOfUseElement.offsetTop - 120);
+      if (location.hash === '#introduction') window.scrollTo(0, 0);
+      if (location.hash === '#terms_of_use') window.scrollTo(0, termsOfUseElement.offsetTop - 120);
     }
   }, [location]);
 

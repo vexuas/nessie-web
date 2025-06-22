@@ -18,18 +18,23 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "lint": "eslint .",
     "auto:changelog": "pnpm exec auto changelog",
     "auto:version": "pnpm version --$(pnpm exec auto version)",
     "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
-    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && pnpm run auto:release && git push -u origin head",
-    "dev": "vite"
+    "release": "git fetch --tags --force && git checkout -b release/$(date +'%Y-%m-%d') && pnpm run auto:release && git push -u origin head"
   },
   "devDependencies": {
-    "auto": "^10.32.6",
+    "@eslint/js": "^9.29.0",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@types/node": "^22.15.19",
     "@vitejs/plugin-react": "^4.5.2",
+    "auto": "^10.32.6",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0",
+    "typescript-eslint": "^8.34.1",
     "vite": "^6.3.5",
     "vite-tsconfig-paths": "^4.3.2"
   },
