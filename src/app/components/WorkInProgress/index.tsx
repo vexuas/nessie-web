@@ -9,7 +9,7 @@ export default function WorkInProgress() {
         <img
           alt="nessie no peace"
           className={styles.Image}
-          src="https://vexuas.b-cdn.net/nessie_no_peace.jpeg"
+          src="https://cdn.vexuas.com/nessie/nessie_no_peace.jpeg"
         />
       </div>
     </div>
