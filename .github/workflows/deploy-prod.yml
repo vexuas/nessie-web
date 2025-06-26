@@ -36,6 +36,7 @@ jobs:
         if: failure()
         with:
           script: |
+            const { BUILD_LOGS, DEPLOY_LOGS } = process.env
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
