@@ -1,0 +1,25 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+domains:
+- domain: nessie.moe
+  type: PRIMARY
+  zone: nessie.moe
+ingress:
+  rules:
+  - component:
+      name: nessie-web
+    match:
+      path:
+        prefix: /
+name: nessie-web
+region: sgp
+static_sites:
+- build_command: yarn build
+  catchall_document: index.html
+  environment_slug: node-js
+  github:
+    branch: develop
+    repo: vexuas/nessie-web
+  name: nessie-web
+  source_dir: /
