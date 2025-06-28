@@ -15,3 +15,12 @@ jobs:
         uses: digitalocean/app_action/deploy@v2
         with:
           token: ${{ secrets.DO_ADMIN_API_ACCESS_TOKEN }}
+
+      - name: Send notification to Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_NOTIFICATION_WEBHOOK }}
+          DISCORD_USERNAME: 'Nessie-Web Release Notification'
+          DISCORD_AVATAR: 'https://cdn.vexuas.com/nessie/nessie_no_peace.jpeg'
+        uses: Ilshidur/action-discord@0.3.2
+        with:
+          args: 'Successfully deployed `${{ github.ref_name }}` to production'
