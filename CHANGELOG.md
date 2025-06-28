@@ -1,3 +1,20 @@
+# v0.4.1 (Sat Jun 28 2025)
+
+#### 🔧 Tweaks
+
+- Add deployment workflow [#27](https://github.com/vexuas/nessie-web/pull/27) ([@vexuas](https://github.com/vexuas))
+- Update cdn url [#26](https://github.com/vexuas/nessie-web/pull/26) ([@vexuas](https://github.com/vexuas))
+
+#### 🏠 Internal
+
+- Release/2025 06 23 [#25](https://github.com/vexuas/nessie-web/pull/25) ([@vexuas](https://github.com/vexuas))
+
+#### Authors: 1
+
+- Gabriel R ([@vexuas](https://github.com/vexuas))
+
+---
+
 # v0.4.0 (Mon Jun 23 2025)
 
 #### 🚀 Enhancement
