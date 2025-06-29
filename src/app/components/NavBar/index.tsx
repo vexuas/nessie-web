@@ -13,7 +13,7 @@ export default function NavBar() {
     });
   });
   return (
-    <div className={`${styles.Container} ${scroll > 10 && styles.Scrolling}`}>
+    <div data-testid="NavBar" className={`${styles.Container} ${scroll > 10 && styles.Scrolling}`}>
       <Link to="/">
         <div className={styles.Title}>
           <img src="./nessie_logo.png" alt="Nessie Logo" className={styles.Logo} />

@@ -2,7 +2,7 @@ import styles from './ContactUs.module.scss';
 
 export default function ContactUs() {
   return (
-    <div className={styles.Section}>
+    <div className={styles.Section} data-testid="ContactUs">
       <div className={styles.Title}>Contacting Us</div>
       <div className={styles.Description}>
         <p>

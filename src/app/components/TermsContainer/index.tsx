@@ -26,7 +26,7 @@ export default function TermsContainer() {
 
   return (
     <LayoutContainer>
-      <div className={styles.Container}>
+      <div data-testid="TermsContainer" className={styles.Container}>
         <Introduction />
         <PrivacyPolicy />
         <TermsOfUse />
