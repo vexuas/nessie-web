@@ -19,6 +19,7 @@
     "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "vitest",
     "auto:changelog": "pnpm exec auto changelog",
     "auto:version": "pnpm version $(pnpm exec auto version)",
     "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
