@@ -8,7 +8,7 @@ interface Props {
 
 export default function Button({ className, label, onClick }: Props) {
   return (
-    <button className={`${styles.Container} ${className}`} onClick={onClick}>
+    <button data-testid="Button" className={`${styles.Container} ${className}`} onClick={onClick}>
       <span>{label}</span>
     </button>
   );

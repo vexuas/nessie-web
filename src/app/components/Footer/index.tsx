@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 
 export default function Footer() {
   return (
-    <div className={styles.Container}>
+    <div data-testid="Footer" className={styles.Container}>
       <div className={styles.Contact}>
         <div className={styles.Title}>
           <img src="./nessie_logo.png" alt="Nessie Logo" className={styles.Logo} />
