@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/mixins.scss' as mixins;
+
 .Container {
   display: flex;
   flex-direction: column;
@@ -9,10 +11,9 @@
 }
 
 .Title {
-  text-align: center;
   font-size: 28px;
-  line-height: 150%;
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .Logos {
@@ -28,5 +29,24 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@include mixins.breakpoint(phone) {
+  .Container {
+    width: calc(100% - 48px * 2);
+    padding: 0 48px;
+  }
+  .Logo:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+@include mixins.breakpoint(tablet) {
+  .Container {
+    width: calc(100% - 48px * 2);
+    padding: 0 48px;
+  }
+  .Logo:nth-last-child(-n + 2) {
+    display: none;
   }
 }
