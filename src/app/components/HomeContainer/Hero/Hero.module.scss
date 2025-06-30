@@ -3,7 +3,6 @@
 
 .Container {
   display: flex;
-  height: calc(100vh - variables.$navbar-height - variables.$navbar-height);
   padding: variables.$navbar-height 160px;
 }
 

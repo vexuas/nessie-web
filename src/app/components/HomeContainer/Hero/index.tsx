@@ -1,3 +1,4 @@
+import { DISCORD_INVITE_LINK } from '../../../../utils/constants';
 import Button from '../../Elements/Button';
 import styles from './Hero.module.scss';
 
@@ -13,7 +14,9 @@ export default function Hero() {
         </div>
         <div>
           <Button className={styles.SeeMoreButton} label="See features" />
-          <Button className={styles.AddButton} label="Add to discord" />
+          <a href={DISCORD_INVITE_LINK} target="_blank" rel="noreferrer">
+            <Button className={styles.AddButton} label="Add to discord" />
+          </a>
         </div>
       </div>
       <div className={styles.RightSection}>
