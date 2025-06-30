@@ -1,3 +1,21 @@
+# v0.4.2 (Mon Jun 30 2025)
+
+#### 🔧 Tweaks
+
+- Add hero section [#31](https://github.com/vexuas/nessie-web/pull/31) ([@vexuas](https://github.com/vexuas))
+- Add vitest to workflow [#30](https://github.com/vexuas/nessie-web/pull/30) ([@vexuas](https://github.com/vexuas))
+- Install vitest [#29](https://github.com/vexuas/nessie-web/pull/29) ([@vexuas](https://github.com/vexuas))
+
+#### 🏠 Internal
+
+- Release/2025 06 28 [#28](https://github.com/vexuas/nessie-web/pull/28) ([@vexuas](https://github.com/vexuas))
+
+#### Authors: 1
+
+- Gabriel R ([@vexuas](https://github.com/vexuas))
+
+---
+
 # v0.4.1 (Sat Jun 28 2025)
 
 #### 🔧 Tweaks
