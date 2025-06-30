@@ -4,7 +4,7 @@ import styles from './Hero.module.scss';
 
 export default function Hero() {
   return (
-    <div className={styles.Container}>
+    <div className={styles.Container} data-testid="Hero">
       <div className={styles.LeftSection}>
         <div className={styles.Title}>Stay up-to-date with Apex Legends Map Rotations </div>
         <div className={styles.Description}>
