@@ -39,7 +39,7 @@ export default function NavBar() {
           API
         </a>
         <a href={DISCORD_INVITE_LINK} target="_blank" rel="noreferrer">
-          <Button label="Invite" />
+          <Button label="Add to discord" />
         </a>
       </div>
     </div>
