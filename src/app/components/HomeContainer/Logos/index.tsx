@@ -12,11 +12,11 @@ export default function Logos() {
   ];
 
   const t_logos = MOCK_LOGOS.map((logo, index) => {
-    return <img className={styles.Logo} key={index} src={logo} alt="logo" />;
+    return <img className={styles.Logo} data-testid="Logo" key={index} src={logo} alt="logo" />;
   });
 
   return (
-    <div className={styles.Container}>
+    <div className={styles.Container} data-testid="Logos">
       <div className={styles.Title}>Join 123456 users in 2000 servers using Nessie</div>
       <div className={styles.Logos}>{t_logos}</div>
     </div>
