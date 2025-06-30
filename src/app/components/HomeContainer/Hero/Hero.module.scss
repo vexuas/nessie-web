@@ -4,6 +4,7 @@
 
 .Container {
   display: flex;
+  justify-content: center;
   padding: variables.$navbar-height 160px;
   margin-bottom: 60px;
 }
@@ -71,8 +72,6 @@
 
 @include mixins.breakpoint(phone) {
   .Container {
-    min-width: variables.$display-width-default-mobile;
-    width: calc(100vw - 24px * 2);
     padding: 104px 24px;
   }
 
@@ -86,10 +85,7 @@
 }
 @include mixins.breakpoint(tablet) {
   .Container {
-    min-width: variables.$display-width-default-mobile;
-    width: calc(100vw - 48px * 2);
     padding: 104px 48px;
-    justify-content: center;
   }
 
   .Description {
@@ -102,8 +98,6 @@
 }
 @include mixins.breakpoint(desktop) {
   .Container {
-    min-width: variables.$display-width-default-mobile;
-    width: calc(100vw - 104px * 2);
     padding: 104px;
   }
 
