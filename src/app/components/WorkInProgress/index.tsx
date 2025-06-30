@@ -7,7 +7,7 @@ export default function WorkInProgress() {
       <div>Come back in a couple of weeks! (probably)</div>
       <div className={styles.ImageContainer}>
         <img
-          alt="nessie no peace"
+          alt="nessie placeholder"
           className={styles.Image}
           src="https://cdn.vexuas.com/nessie/nessie_no_peace.jpeg"
         />

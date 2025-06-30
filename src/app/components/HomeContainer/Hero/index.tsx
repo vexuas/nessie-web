@@ -20,7 +20,11 @@ export default function Hero() {
         </div>
       </div>
       <div className={styles.RightSection}>
-        <img className={styles.Image} src="https://cdn.vexuas.com/nessie/nessie_no_peace.jpeg" />
+        <img
+          alt="nessie placeholder"
+          className={styles.Image}
+          src="https://cdn.vexuas.com/nessie/nessie_no_peace.jpeg"
+        />
       </div>
     </div>
   );
