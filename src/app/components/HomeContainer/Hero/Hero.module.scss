@@ -1,0 +1,55 @@
+@use '../../../../assets/styles/variables.scss' as variables;
+@use 'sass:color' as color;
+
+.Container {
+  display: flex;
+  height: calc(100vh - variables.$navbar-height - variables.$navbar-height);
+  padding: variables.$navbar-height 160px;
+}
+
+.LeftSection {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  max-width: 460px;
+  padding-top: 32px;
+}
+
+.Title {
+  font-family: Caveat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.Description {
+  width: 400px;
+  margin: 32px 0;
+  font-size: 21px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.Button {
+  padding: 21px 28px;
+  font-size: 21px;
+}
+
+.SeeMoreButton {
+  @extend .Button;
+  margin-right: 24px;
+  background-color: transparent;
+  border: 1px solid variables.$color-default;
+}
+
+.AddButton {
+  @extend .Button;
+}
+
+.RightSection {
+}
+
+.Image {
+  width: 657px;
+  height: 670px;
+}
