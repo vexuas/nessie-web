@@ -1,5 +1,7 @@
 import styles from './Logos.module.scss';
 
+// TODO: Upload server logos to cdn and hardcode them here
+// TODO: Add carousel functionality
 export default function Logos() {
   const MOCK_LOGOS: string[] = [
     'https://cdn.vexuas.com/Wallpapers/you_cute.jpg',
