@@ -3,8 +3,8 @@
 
 .Container {
   position: fixed;
-  height: 104px;
-  max-height: 104px;
+  height: variables.$navbar-height;
+  max-height: variables.$navbar-height;
   width: calc(100% - 160px * 2);
   display: flex;
   align-items: center;

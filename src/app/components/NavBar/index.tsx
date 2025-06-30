@@ -2,6 +2,7 @@ import styles from './NavBar.module.scss';
 import Button from '../Elements/Button';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { DISCORD_INVITE_LINK } from '../../../utils/constants';
 
 export default function NavBar() {
   const [scroll, setScroll] = useState(0);
@@ -37,12 +38,8 @@ export default function NavBar() {
         >
           API
         </a>
-        <a
-          href="https://discord.com/api/oauth2/authorize?client_id=889135055430111252&permissions=3088&scope=applications.commands%20bot"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Button label="Invite" />{' '}
+        <a href={DISCORD_INVITE_LINK} target="_blank" rel="noreferrer">
+          <Button label="Add to discord" />
         </a>
       </div>
     </div>
