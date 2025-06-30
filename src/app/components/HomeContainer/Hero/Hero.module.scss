@@ -40,6 +40,15 @@
   margin-right: 24px;
   background-color: transparent;
   border: 1px solid variables.$color-default;
+
+  &:hover {
+    cursor: pointer;
+    background-color: color.adjust(variables.$color-alt, $lightness: -5%);
+    color: color.adjust(variables.$color-default, $lightness: -10%);
+  }
+  &:active {
+    background-color: color.adjust(variables.$color-alt, $lightness: -7%);
+  }
 }
 
 .AddButton {
