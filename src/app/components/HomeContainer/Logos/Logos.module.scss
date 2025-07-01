@@ -18,6 +18,10 @@
 
 .Logos {
   width: 800px;
+
+  :global(.swiper-wrapper) {
+    transition-timing-function: linear;
+  }
 }
 
 .Logo {
