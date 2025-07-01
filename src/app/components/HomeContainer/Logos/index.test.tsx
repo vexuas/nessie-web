@@ -5,5 +5,5 @@ test('renders', () => {
   render(<Logos />);
 
   expect(screen.getByTestId('Logos')).toBeInTheDocument();
-  expect(screen.getAllByTestId('Logo')).toHaveLength(5);
+  expect(screen.getAllByTestId('Logo')).toHaveLength(12);
 });

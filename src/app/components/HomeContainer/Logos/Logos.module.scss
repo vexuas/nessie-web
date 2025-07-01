@@ -17,8 +17,11 @@
 }
 
 .Logos {
-  display: flex;
-  align-items: center;
+  width: 800px;
+
+  :global(.swiper-wrapper) {
+    transition-timing-function: linear;
+  }
 }
 
 .Logo {
