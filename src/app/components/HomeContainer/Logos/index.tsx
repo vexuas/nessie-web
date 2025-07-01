@@ -36,7 +36,7 @@ export default function Logos() {
       <Swiper
         freeMode
         loop
-        autoplay={{ delay: 0 }}
+        autoplay={{ delay: 0, disableOnInteraction: false }}
         modules={[Autoplay]}
         className={styles.Logos}
         slidesPerView={6}
