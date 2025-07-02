@@ -4,7 +4,7 @@ import Hero from './Hero';
 import Logos from './Logos';
 
 export default function HomeContainer() {
-  const logos: { name: string; src: string }[] = useMemo(() => {
+  const logos: { id: number; name: string; src: string }[] = useMemo(() => {
     return [...SERVER_LOGOS].sort(() => Math.random() - 0.5); // Shuffle the position of logos for fun
   }, [SERVER_LOGOS]);
 

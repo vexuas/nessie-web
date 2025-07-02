@@ -8,13 +8,16 @@ import 'swiper/css/autoplay';
 // TODO: Add carousel functionality
 
 interface Props {
-  logos: { name: string; src: string }[];
+  logos: { id: number; name: string; src: string }[];
   noOfUsers: string;
   noOfServers: string;
 }
 
 export default function Logos({ logos, noOfUsers, noOfServers }: Props) {
   const breakPoints = {
+    0: {
+      slidesPerView: 2,
+    },
     600: {
       slidesPerView: 4,
     },
@@ -25,9 +28,9 @@ export default function Logos({ logos, noOfUsers, noOfServers }: Props) {
       slidesPerView: 6,
     },
   };
-  const t_logos = logos.map((logo, index) => {
+  const t_logos = logos.map((logo) => {
     return (
-      <SwiperSlide key={index}>
+      <SwiperSlide key={logo.id}>
         <img className={styles.Logo} data-testid="Logos__logo" src={logo.src} alt={logo.name} />
       </SwiperSlide>
     );
