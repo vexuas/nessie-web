@@ -35,7 +35,7 @@ export default function Logos({ logos, noOfUsers, noOfServers }: Props) {
         modules={[Autoplay]}
         className={styles.Logos}
         slidesPerView={6}
-        speed={5000}
+        speed={7500}
       >
         {t_logos}
       </Swiper>
