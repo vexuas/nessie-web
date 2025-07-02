@@ -3,10 +3,12 @@ import Logos from '.';
 
 const mockLogos = [
   {
+    id: 1,
     name: 'Test',
     src: 'https://via.placeholder.com/150',
   },
   {
+    id: 2,
     name: 'Test',
     src: 'https://via.placeholder.com/150',
   },
