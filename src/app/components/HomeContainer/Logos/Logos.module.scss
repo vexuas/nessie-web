@@ -56,8 +56,9 @@
     width: calc(100% - 48px * 2);
     padding: 0 48px;
   }
-  .Logo:nth-last-child(-n + 2) {
-    display: none;
+
+  .Logos {
+    width: 200px;
   }
 }
 @include mixins.breakpoint(tablet) {
@@ -65,7 +66,13 @@
     width: calc(100% - 48px * 2);
     padding: 0 48px;
   }
-  .Logo:nth-last-child(-n + 2) {
-    display: none;
+
+  .Logos {
+    width: 500px;
+  }
+}
+@include mixins.breakpoint(desktop) {
+  .Logos {
+    width: 600px;
   }
 }

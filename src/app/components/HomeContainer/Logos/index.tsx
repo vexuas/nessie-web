@@ -14,6 +14,17 @@ interface Props {
 }
 
 export default function Logos({ logos, noOfUsers, noOfServers }: Props) {
+  const breakPoints = {
+    600: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 6,
+    },
+  };
   const t_logos = logos.map((logo, index) => {
     return (
       <SwiperSlide key={index}>
@@ -32,9 +43,9 @@ export default function Logos({ logos, noOfUsers, noOfServers }: Props) {
         freeMode
         loop
         autoplay={{ delay: 0, disableOnInteraction: false }}
+        breakpoints={breakPoints}
         modules={[Autoplay]}
         className={styles.Logos}
-        slidesPerView={6}
         speed={7500}
       >
         {t_logos}
