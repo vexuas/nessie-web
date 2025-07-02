@@ -1,4 +1,5 @@
 @use '../../../../assets/styles/mixins.scss' as mixins;
+@use '../../../../assets/styles/variables.scss' as variables;
 
 .Container {
   display: flex;
@@ -16,8 +17,17 @@
   text-align: center;
 }
 
+.Users {
+  font-weight: 600;
+}
+
+.Servers {
+  font-weight: 600;
+}
+
 .Logos {
   width: 800px;
+  height: 150px;
 
   :global(.swiper-wrapper) {
     transition-timing-function: linear;
@@ -27,8 +37,14 @@
 .Logo {
   width: 100px;
   height: 100px;
+  border: 3px solid variables.$color-default;
   border-radius: 100px;
   margin-right: 38px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
   &:last-child {
     margin-right: 0;
@@ -40,8 +56,9 @@
     width: calc(100% - 48px * 2);
     padding: 0 48px;
   }
-  .Logo:nth-last-child(-n + 2) {
-    display: none;
+
+  .Logos {
+    width: 200px;
   }
 }
 @include mixins.breakpoint(tablet) {
@@ -49,7 +66,13 @@
     width: calc(100% - 48px * 2);
     padding: 0 48px;
   }
-  .Logo:nth-last-child(-n + 2) {
-    display: none;
+
+  .Logos {
+    width: 500px;
+  }
+}
+@include mixins.breakpoint(desktop) {
+  .Logos {
+    width: 600px;
   }
 }

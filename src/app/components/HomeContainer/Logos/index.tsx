@@ -6,41 +6,57 @@ import 'swiper/css/autoplay';
 
 // TODO: Upload server logos to cdn and hardcode them here
 // TODO: Add carousel functionality
-export default function Logos() {
-  const MOCK_LOGOS: string[] = [
-    'https://cdn.vexuas.com/Wallpapers/you_cute.jpg',
-    'https://cdn.vexuas.com/Wallpapers/maki_full.jpg',
-    'https://cdn.vexuas.com/Wallpapers/you_cute.jpg',
-    'https://cdn.vexuas.com/Wallpapers/maki_full.jpg',
-    'https://cdn.vexuas.com/Wallpapers/you_cute.jpg',
-    'https://cdn.vexuas.com/Wallpapers/maki_full.jpg',
-    'https://cdn.vexuas.com/Wallpapers/you_cute.jpg',
-    'https://cdn.vexuas.com/Wallpapers/maki_full.jpg',
-    'https://cdn.vexuas.com/Wallpapers/you_cute.jpg',
-    'https://cdn.vexuas.com/Wallpapers/maki_full.jpg',
-    'https://cdn.vexuas.com/Wallpapers/you_cute.jpg',
-    'https://cdn.vexuas.com/Wallpapers/maki_full.jpg',
-  ];
 
-  const t_logos = MOCK_LOGOS.map((logo, index) => {
+interface Props {
+  logos: { id: number; name: string; src: string }[];
+  noOfUsers: string;
+  noOfServers: string;
+}
+
+export default function Logos({ logos, noOfUsers, noOfServers }: Props) {
+  const breakPoints = {
+    0: {
+      slidesPerView: 2,
+    },
+    600: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 6,
+    },
+  };
+  const t_logos = logos.map((logo) => {
     return (
-      <SwiperSlide key={index}>
-        <img className={styles.Logo} data-testid="Logo" src={logo} alt="logo" />
+      <SwiperSlide key={logo.id}>
+        <img className={styles.Logo} data-testid="Logos__logo" src={logo.src} alt={logo.name} />
       </SwiperSlide>
     );
   });
 
   return (
     <div className={styles.Container} data-testid="Logos">
-      <div className={styles.Title}>Join 123456 users in 2000 servers using Nessie</div>
+      <div className={styles.Title}>
+        Join over{' '}
+        <span className={styles.Users} data-testid="Logos__users">
+          {noOfUsers}
+        </span>{' '}
+        users in{' '}
+        <span className={styles.Servers} data-testid="Logos__servers">
+          {noOfServers}+
+        </span>{' '}
+        servers using Nessie
+      </div>
       <Swiper
         freeMode
         loop
         autoplay={{ delay: 0, disableOnInteraction: false }}
+        breakpoints={breakPoints}
         modules={[Autoplay]}
         className={styles.Logos}
-        slidesPerView={6}
-        speed={5000}
+        speed={7500}
       >
         {t_logos}
       </Swiper>
