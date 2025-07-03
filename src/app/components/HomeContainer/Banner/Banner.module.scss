@@ -1,0 +1,45 @@
+@use '../../../../assets/styles/variables.scss' as variables;
+@use 'sass:color' as color;
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 120px 0 160px 0;
+}
+
+.Banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$bg-color-alt;
+  width: calc(780px - 174px * 2);
+  padding: 72px 174px;
+  border-radius: 12px;
+}
+
+.Title {
+  color: variables.$color-alt;
+  font-family: Caveat;
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.Button {
+  width: 168px;
+  margin-top: 28px;
+  font-size: 21px;
+  padding: 21px 28px;
+  background-color: variables.$bg-color-main;
+
+  &:hover {
+    cursor: pointer;
+    background-color: color.adjust(variables.$bg-color-main, $lightness: -5%);
+    color: color.adjust(variables.$color-default, $lightness: -10%);
+  }
+  &:active {
+    background-color: color.adjust(variables.$bg-color-main, $lightness: -7%);
+  }
+}
