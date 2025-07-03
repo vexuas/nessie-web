@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { SERVER_LOGOS } from '../../../utils/constants';
 import Hero from './Hero';
 import Logos from './Logos';
+import Banner from './Banner';
 
 export default function HomeContainer() {
   const logos: { id: number; name: string; src: string }[] = useMemo(() => {
@@ -15,6 +16,7 @@ export default function HomeContainer() {
     <div data-testid="HomeContainer">
       <Hero />
       <Logos logos={logos} noOfUsers={noOfUsers} noOfServers={noOfServers} />
+      <Banner />
     </div>
   );
 }
