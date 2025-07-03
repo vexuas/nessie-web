@@ -1,13 +1,22 @@
-# nessie-web | v0.2.0
+# nessie-web
 
-Landing page for the discord bot [Nessie](https://github.com/vexuas/nessie)
-I'll add more documentation once the first working version is out
+Landing page for the discord bot [Nessie](https://github.com/vexuas/nessie). Hosted at [nessie.moe](https://nessie.moe/) through DigitalOcean's App platform
+
+I'll add more documentation once I've fully fleshed out every section
 
 Currently only houses:
-- Work In Progress Page
-- Terms and Privacy Policy Page
 - Nav bar
+- Hero
+- Logos
+- Banner
 - Footer
+- Terms and Privacy Policy Page
 
-![image](https://user-images.githubusercontent.com/42207245/174471676-f0ad0a49-dae0-40b9-b051-4cdaeee2b9e7.png)
-![image](https://user-images.githubusercontent.com/42207245/174471687-af2ac47c-b155-42ba-8273-b92742f0f1c1.png)
+<img width="1385" alt="image" src="https://github.com/user-attachments/assets/068956db-635e-43df-89c3-35bfb2800f98" />
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/eeee1310-5609-4523-9306-6a8f1e7d93d8" />
+
+<img width="1395" alt="image" src="https://github.com/user-attachments/assets/5481d4d6-59a1-4b64-8fe6-078a4c7efc3e" />
+
+<img width="1344" alt="image" src="https://github.com/user-attachments/assets/a9345621-7013-4c36-8d55-732200928413" />
+
