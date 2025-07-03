@@ -1,4 +1,5 @@
 @use '../../../../assets/styles/variables.scss' as variables;
+@use '../../../../assets/styles/mixins.scss' as mixins;
 @use 'sass:color' as color;
 
 .Container {
@@ -18,6 +19,7 @@
   width: calc(780px - 174px * 2);
   padding: 72px 174px;
   border-radius: 12px;
+  text-align: center;
 }
 
 .Title {
@@ -41,5 +43,24 @@
   }
   &:active {
     background-color: color.adjust(variables.$bg-color-main, $lightness: -7%);
+  }
+}
+
+@include mixins.breakpoint(phone) {
+  .Banner {
+    width: calc(340px - 14px * 2);
+    padding: 48px 14px;
+  }
+}
+@include mixins.breakpoint(tablet) {
+  .Banner {
+    width: calc(550px - 60px * 2);
+    padding: 72px 60px;
+  }
+}
+@include mixins.breakpoint(desktop) {
+  .Banner {
+    width: calc(720px - 80px * 2);
+    padding: 72px 80px;
   }
 }
