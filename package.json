@@ -1,6 +1,6 @@
 {
   "name": "nessie-web",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "dependencies": {
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
