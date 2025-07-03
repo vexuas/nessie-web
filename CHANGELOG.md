@@ -1,3 +1,23 @@
+# v0.4.3 (Fri Jul 04 2025)
+
+#### 🔧 Tweaks
+
+- Update README.md [#37](https://github.com/vexuas/nessie-web/pull/37) ([@vexuas](https://github.com/vexuas))
+- Add banner section [#36](https://github.com/vexuas/nessie-web/pull/36) ([@vexuas](https://github.com/vexuas))
+- Add actual servers as logos [#35](https://github.com/vexuas/nessie-web/pull/35) ([@vexuas](https://github.com/vexuas))
+- Add carousel for logos [#34](https://github.com/vexuas/nessie-web/pull/34) ([@vexuas](https://github.com/vexuas))
+- Add logos section [#33](https://github.com/vexuas/nessie-web/pull/33) ([@vexuas](https://github.com/vexuas))
+
+#### 🏠 Internal
+
+- Release/2025 06 30 [#32](https://github.com/vexuas/nessie-web/pull/32) ([@vexuas](https://github.com/vexuas))
+
+#### Authors: 1
+
+- Gabriel R ([@vexuas](https://github.com/vexuas))
+
+---
+
 # v0.4.2 (Mon Jun 30 2025)
 
 #### 🔧 Tweaks
