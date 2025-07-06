@@ -1,3 +1,19 @@
+# v0.4.5 (Sun Jul 06 2025)
+
+#### 🔧 Tweaks
+
+- Add missing docker container login step in deployment [#42](https://github.com/vexuas/nessie-web/pull/42) ([@vexuas](https://github.com/vexuas))
+
+#### 🏠 Internal
+
+- Release/2025 07 06 [#41](https://github.com/vexuas/nessie-web/pull/41) ([@vexuas](https://github.com/vexuas))
+
+#### Authors: 1
+
+- Gabriel R ([@vexuas](https://github.com/vexuas))
+
+---
+
 # v0.4.4 (Sun Jul 06 2025)
 
 #### 🔧 Tweaks
