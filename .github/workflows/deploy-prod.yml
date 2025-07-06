@@ -48,8 +48,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.ref_name }}
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/${{ github.repository }}:pr-${{ github.event.pull_request.number }}
+            ghcr.io/${{ github.repository }}:sha-${{ github.sha }}
       - name: Deploy the app
         id: deploy
         uses: digitalocean/app_action/deploy@v2
