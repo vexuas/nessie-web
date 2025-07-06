@@ -1,3 +1,20 @@
+# v0.4.4 (Sun Jul 06 2025)
+
+#### 🔧 Tweaks
+
+- Use dockerfile to deploy [#40](https://github.com/vexuas/nessie-web/pull/40) ([@vexuas](https://github.com/vexuas))
+- Fix Logos responsive design [#39](https://github.com/vexuas/nessie-web/pull/39) ([@vexuas](https://github.com/vexuas))
+
+#### 🏠 Internal
+
+- Release/2025 07 04 [#38](https://github.com/vexuas/nessie-web/pull/38) ([@vexuas](https://github.com/vexuas))
+
+#### Authors: 1
+
+- Gabriel R ([@vexuas](https://github.com/vexuas))
+
+---
+
 # v0.4.3 (Fri Jul 04 2025)
 
 #### 🔧 Tweaks
