@@ -19,6 +19,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "test": "vitest",
+    "test:pw": "playwright test",
+    "test:pw:ui": "playwright test --ui",
     "auto:changelog": "pnpm exec auto changelog",
     "auto:version": "pnpm version $(pnpm exec auto version)",
     "auto:release": "pnpm run auto:changelog && pnpm run auto:version",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
+    "@playwright/test": "^1.53.2",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@testing-library/jest-dom": "^5.14.1",
